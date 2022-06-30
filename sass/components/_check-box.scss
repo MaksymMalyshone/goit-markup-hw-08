@@ -1,0 +1,31 @@
+.check-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-tex-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.check-text:hover + .check-text::before {
+  border-color: var(--accent-color);
+}
+
+.check-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-tex-color);
+  border-radius: 3px;
+  margin-right: 8.38px;
+  cursor: pointer;
+}
+
+.modal-check:checked + .check-text::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
