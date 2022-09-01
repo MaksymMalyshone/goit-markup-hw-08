@@ -40,3 +40,14 @@ img {
 .accent {
   color: var(--accent-color);
 }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}

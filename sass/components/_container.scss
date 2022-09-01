@@ -6,3 +6,29 @@
   padding-right: 15px;
   /* outline: 1px solid red; */
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: none;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    min-height: 0;
+  }
+}
